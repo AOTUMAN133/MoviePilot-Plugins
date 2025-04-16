@@ -6,12 +6,12 @@ from app.schemas import MediaServerConf, ServiceInfo
 from app.log import logger
 {
   "EmbyChecker": {
-    "name": "EMBY 媒体去重移动",
+    "name": "EMBY媒体去重移动",
     "description": "识别电影文件并与 EMBY 媒体库对比，不存在则移动到指定目录。",
     "labels": "EMBY,去重,整理",
     "version": "1.0",
     "icon": "film.png",
-    "author": "your_name",
+    "author": "凹凸曼",
     "level": 2
   }
 }
