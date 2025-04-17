@@ -13,6 +13,8 @@ class ZspaceMediaFresh(_PluginBase):
     plugin_desc = "识别电影文件并与 EMBY 媒体库对比，不存在则移动到指定目录。"
     # 插件图标
     plugin_icon = "https://raw.githubusercontent.com/gxterry/MoviePilot-Plugins/main/icons/Zspace_B.png"
+     # 插件配置项ID前缀
+    plugin_config_prefix = "embychecker"
     # 插件版本
     plugin_version = "2.1.0"
     # 插件作者
