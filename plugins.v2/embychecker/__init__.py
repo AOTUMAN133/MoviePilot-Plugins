@@ -4,17 +4,26 @@ from typing import List
 from app.helper.mediaserver import MediaServerHelper
 from app.schemas import MediaServerConf, ServiceInfo
 from app.log import logger
-{
-  "EmbyChecker": {
-    "name": "EMBY媒体去重移动",
-    "description": "识别电影文件并与 EMBY 媒体库对比，不存在则移动到指定目录。",
-    "labels": "EMBY,去重,整理",
-    "version": "1.0",
-    "icon": "film.png",
-    "author": "凹凸曼",
-    "level": 2
-  }
-}
+
+
+class ZspaceMediaFresh(_PluginBase):
+    # 插件名称
+    plugin_name = "EMBY媒体去重移动"
+    # 插件描述
+    plugin_desc = "识别电影文件并与 EMBY 媒体库对比，不存在则移动到指定目录。"
+    # 插件图标
+    plugin_icon = "https://raw.githubusercontent.com/gxterry/MoviePilot-Plugins/main/icons/Zspace_B.png"
+    # 插件版本
+    plugin_version = "2.1.0"
+    # 插件作者
+    plugin_author = "凹凸曼"
+    # 作者主页
+    author_url = "https://github.com/AOTUMAN133/"
+    # 加载顺序
+    plugin_order = 15
+    # 可使用的用户级别
+    auth_level = 1
+
 class Plugin:
     def __init__(self):
         self.mediainfo = MediaServerHelper()
